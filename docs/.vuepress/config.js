@@ -7,6 +7,14 @@ module.exports = {
       { text: '笔记本', link: '/notebook/笔记本描述.md' },
       { text: '产品之路', link: '/product/' },
       { text: 'axure案例', link: '/axure-demo/' },
+      { 
+        text: '杂事本', 
+        items: [
+          {
+            text: '背单词项目', link: '/杂事本/背单词项目/前言.md'
+          }
+        ]
+      },
     ],
     sidebar: {
       '/notebook/': [
@@ -26,6 +34,14 @@ module.exports = {
           title: 'Number 数字',
           path: '/notebook/number.md'
         },
+        {
+          title: '运算符',
+          path: '/notebook/operator.md'
+        },
+        {
+          title: 'git',
+          path: '/notebook/git.md'
+        },
       ],
       '/product/': [
         {
@@ -37,6 +53,12 @@ module.exports = {
         {
           title: '前言',
           path: '/axure-demo/introduction.md'
+        }
+      ],
+      '/杂事本/背单词项目/': [
+        {
+          title: '项目时间线',
+          path: '/杂事本/背单词项目/项目时间线.md'
         }
       ]
     }
