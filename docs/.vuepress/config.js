@@ -5,7 +5,14 @@ module.exports = {
     logo: '/img/avatar.jpg',
     nav: [
       { text: '笔记本', link: '/notebook/笔记本描述.md' },
-      { text: '产品之路', link: '/product/' },
+      { 
+        text: '前端开发', 
+        items: [
+          {
+            text: 'webpack', link: '/front-development/webpack/webpack前言.md'
+          },
+        ]
+       },
       { text: 'axure案例', link: '/axure-demo/' },
       { 
         text: '杂事本', 
@@ -18,6 +25,10 @@ module.exports = {
     ],
     sidebar: {
       '/notebook/': [
+        {
+          title: 'css',
+          path: '/notebook/css.md'
+        },
         {
           title: 'Array 数组',
           path: '/notebook/array.md'
@@ -42,6 +53,14 @@ module.exports = {
           title: 'git',
           path: '/notebook/git.md'
         },
+        {
+          title: 'linux',
+          path: '/notebook/linux.md'
+        },
+        {
+          title: 'Element-ui',
+          path: '/notebook/element.md'
+        },
       ],
       '/product/': [
         {
@@ -58,6 +77,12 @@ module.exports = {
       '/杂事本/背单词项目/': [
         {
           title: '项目时间线',
+          path: '/杂事本/背单词项目/项目时间线.md'
+        }
+      ],
+      '/front-development/webpack': [
+        {
+          title: 'testt',
           path: '/杂事本/背单词项目/项目时间线.md'
         }
       ]

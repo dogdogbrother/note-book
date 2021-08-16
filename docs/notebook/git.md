@@ -53,5 +53,12 @@ git reset *.js  // 取消全部的暂存的js文件
 `git fetch` 的作用是更新远程仓库的信息,假如同事新建立个分支上传到了远程仓库.但是我本地并不知道新分支的名字,可以使用fetch来获取仓库的最新状态.`git fetch` +  `git merge origin/分支名` 基本等同与`git pull origin dev`.
 
 
+## rebase 变基合并
+`git rebase` 和 `git merge` 功能是一样的,都是合并代码.
+
+举个例子,2个开发者一起commit了一次,然后又commit了一次,最后两人都push到仓库,观察commit已经记录可以发现,一共有6次提交记录,4个commit,2个merge信息,而且会发现,提交记录会按照commit的时间排序,也就是交叉显示.
+
+如果开发者多了起来,可见这个`commit`信息就会很乱,并且有很多没必要的`merge`提交.如果使用`rebase`,那么你本地的`commit`记录,就会形成一个整体,不会被别人的`commit`乱入,并且没有`merge commit`.
+
 
 
