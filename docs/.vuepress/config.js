@@ -1,5 +1,5 @@
 module.exports = {
-  title: '枪侠的笔记本',
+  title: 'gunsliner笔记本',
   description: 'playing to live',
   themeConfig: {
     logo: '/img/avatar.jpg',
@@ -11,6 +11,12 @@ module.exports = {
           {
             text: 'webpack', link: '/front-development/webpack/webpack前言.md'
           },
+          {
+            text: 'electron', link: '/front-development/electron/electron前言.md'
+          },
+          {
+            text: 'next', link: '/front-development/next/next前言.md'
+          },
         ]
        },
       { text: 'axure案例', link: '/axure-demo/' },
@@ -19,6 +25,25 @@ module.exports = {
         items: [
           {
             text: '背单词项目', link: '/杂事本/背单词项目/前言.md'
+          }
+        ]
+      },
+      // { 
+      //   text: '后端', 
+      //   items: [
+      //     {
+      //       text: '建站大作战', link: '/后端/建站大副本/前言.md'
+      //     }
+      //   ]
+      // },
+      { 
+        text: '运维', 
+        items: [
+          {
+            text: '建站大作战', link: '/运维/建站大副本/前言.md'
+          },
+          {
+            text: 'jenkins', link: '/运维/jenkins/前言.md'
           }
         ]
       },
@@ -84,6 +109,36 @@ module.exports = {
         {
           title: 'testt',
           path: '/杂事本/背单词项目/项目时间线.md'
+        }
+      ],
+      '/front-development/electron': [
+        {
+          title: 'electron11111',
+          path: '/front-development/electron/electron11111.md'
+        }
+      ],
+      '/front-development/next': [
+        {
+          title: 'next11111',
+          path: '/front-development/next/1111.md'
+        }
+      ],
+      '/后端/建站大副本/': [
+        {
+          title: '1',
+          path: '/后端/建站大副本/1.md'
+        }
+      ],
+      '/运维/建站大副本/': [
+        {
+          title: '1',
+          path: '/运维/建站大副本/1.md'
+        }
+      ],
+      '/运维/jenkins/': [
+        {
+          title: '1',
+          path: '/运维/jenkins/1.md'
         }
       ]
     }
