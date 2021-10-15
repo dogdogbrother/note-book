@@ -2,7 +2,7 @@ module.exports = {
   head: [
     [
       'link',
-      { rel: 'icon', href: 'favicon.ico' }
+      { rel: 'icon', href: '/favicon.ico' }
     ]
   ],
   title: 'gunsliner',

@@ -275,3 +275,17 @@ entries.next()  // {value: [0, 'a'], done: false}
 entries.next().value; // [1, 'b']
 entries.next().value; // [2, 'c']
 ```
+## flat 扁平化数组
+```js
+[1, 2, [3, 4, [5, 6]]].flat(1)
+// 输出[1, 2, 3, 4, [5, 6]]
+```
+参数是`Number`,表示需要扁平化的层级数,如果不知道有多少层,可以用`Infinity`: `flat(Infinity)`.
+
+## flatMap 返回扁平化数组
+回调函数返回的如果是个数组,会被`flat(1)`包装下返回.
+```js
+[[1], [2], [3]].flatMap(item => item)
+// [1, 2, 3]
+```
+从需求上看,似乎应该用`map(item => ...item)`实现,但是如果 item 并不是数组,那么`...`扩展运算就会报错.而`flatMap`只会处理数组,其他数据类型不处理,包括对象.
