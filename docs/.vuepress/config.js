@@ -16,4 +16,5 @@ module.exports = {
     lineNumbers: true
   },
   dest: 'dist',
+  theme: 'yuu',
 }
