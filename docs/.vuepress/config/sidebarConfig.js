@@ -49,22 +49,32 @@ module.exports = {
       path: '/杂事本/背单词项目/项目时间线.md'
     }
   ],
-  '/front-development/webpack': [
+  '/front/react/': [
+    {
+      title: 'react基础hook',
+      path: '/front/react/react基础.md'
+    },
+    {
+      title: 'react晋级hook',
+      path: '/front/react/react晋级.md'
+    }
+  ],
+  '/front/webpack': [
     {
       title: 'testt',
       path: '/杂事本/背单词项目/项目时间线.md'
     }
   ],
-  '/front-development/electron': [
+  '/front/electron': [
     {
       title: 'electron11111',
-      path: '/front-development/electron/electron11111.md'
+      path: '/front/electron/electron11111.md'
     }
   ],
-  '/front-development/next': [
+  '/front/next': [
     {
       title: 'next11111',
-      path: '/front-development/next/1111.md'
+      path: '/front/next/1111.md'
     }
   ],
   '/后端/建站大副本/': [

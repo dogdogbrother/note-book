@@ -15,5 +15,5 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  dest: 'dist',
+  dest: 'dist',  // 把dist目录设置在根目录下
 }

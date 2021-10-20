@@ -1,16 +1,19 @@
 module.exports = [
   { text: '笔记本', link: '/notebook/笔记本描述.md' },
   { 
-    text: '前端开发', 
+    text: '前端', 
     items: [
       {
-        text: 'webpack', link: '/front-development/webpack/webpack前言.md'
+        text: 'react', link: '/front/react/react前言.md'
       },
       {
-        text: 'electron', link: '/front-development/electron/electron前言.md'
+        text: 'webpack', link: '/front/webpack/webpack前言.md'
       },
       {
-        text: 'next', link: '/front-development/next/next前言.md'
+        text: 'electron', link: '/front/electron/electron前言.md'
+      },
+      {
+        text: 'next', link: '/front/next/next前言.md'
       },
     ]
    },
