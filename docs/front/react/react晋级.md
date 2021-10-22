@@ -156,3 +156,12 @@ export default memo(Child);
 ::: tip 提示
 `useCallback` 要和 `React.memo` 配合使用才能做到性能优化.
 :::
+
+## useReducer
+
+`useReducer` 是 `useState` 语法糖,是使用观感上,也是**加强版**的 `useState`,直接看个例子就明白了:
+```js
+
+```
+
+
