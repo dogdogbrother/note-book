@@ -45,8 +45,8 @@ module.exports = {
   ],
   '/杂事本/背单词项目/': [
     {
-      title: '项目时间线',
-      path: '/杂事本/背单词项目/项目时间线.md'
+      title: '今天要背的',
+      path: '/杂事本/背单词项目/today.md'
     }
   ],
   '/front/react/': [

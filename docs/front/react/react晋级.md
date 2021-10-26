@@ -161,7 +161,19 @@ export default memo(Child);
 
 `useReducer` 是 `useState` 语法糖,是使用观感上,也是**加强版**的 `useState`,直接看个例子就明白了:
 ```js
-
+import { useReducer } from 'react'
+export default function() {
+  const [counter, dispatch] = useReducer((state, action) => {
+    if(action === "add") {
+      return state += 3
+    } 
+  }, 0)
+  return <>
+    <span>{counter}</span>
+    <span onClick={() => dispatch("add")}>点我加3</span>
+  </>
+}
 ```
+相比较 `useState`,`useReducer` 多了个函数参数,把数据相应的逻辑在内部实现了.
 
 
