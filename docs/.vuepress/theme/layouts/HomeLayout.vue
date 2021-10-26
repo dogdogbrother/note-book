@@ -6,12 +6,18 @@
       <div class="blog-info">
         <div class="website-info">
           <h1>gunsliner</h1>
-          <p>一些笔记用于赋值粘贴 一些日常所得 一些知识积累 一些分享 一些备忘录</p>
+          <p>一些笔记用于复制粘贴  一些记录日常所得  一些知识积累  一些分享  一些备忘</p>
           <p>人在北京 混混日子</p>
         </div>
         <ul class="blog-list">
           <li v-for="item in nav" :key="item.text">
             <a :href="getHtmlUrl(item.link)" v-if="item.link">{{item.text}}</a>
+            <span v-else>{{item.text}}</span>
+            <ul v-if="item.items">
+              <li v-for="subItem in item.items" :key="subItem.text">
+                <a :href="getHtmlUrl(subItem.link)" v-if="subItem.link">{{subItem.text}}</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <div class="user-info">
@@ -57,6 +63,11 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+ul 
+  margin 0
+  padding 0
+  list-style none
+
 @media screen and (min-width:1000px)
   .wrap
     height 100vh
@@ -101,10 +112,24 @@ export default {
       font-size 14px
       line-height: 1.5
       color #6a8bad
+
+  .blog-list
+    flex 1
+    padding 20px 0
+    > li
+      margin-bottom: 5px
+    span
+      font-size: 15px
+      font-weight: bold
+    ul 
+      padding-left 20px
+
   .user-info 
     display: flex
     height: 80px
     margin: 0 auto
+    position relative
+    left -15px
     .user-avatar
       background-image url(../../public/img/avatar.png)
       background-size: cover
@@ -113,14 +138,14 @@ export default {
       border-radius: 50%
     .info 
       padding 3px 0
-      margin-left: 10px
+      margin-left: 20px
       display: flex
       flex-direction: column
       justify-content space-around
-      p {
+      p
         margin: 0
         font-size: 13px
         font-weight: bold
-      }
+      
 
 </style>
