@@ -29,7 +29,7 @@ module.exports = [
     text: '杂事本', 
     items: [
       {
-        text: '背单词项目', link: '/杂事本/背单词项目/today.md'
+        text: '单词本', link: '/杂事本/单词本.md'
       }
     ]
   },

@@ -43,12 +43,6 @@ module.exports = {
       path: '/后端/koa/1.md'
     }
   ],
-  '/杂事本/背单词项目/': [
-    {
-      title: '今天要背的',
-      path: '/杂事本/背单词项目/today.md'
-    }
-  ],
   '/front/react/': [
     {
       title: 'react基础hook',
