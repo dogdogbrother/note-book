@@ -39,8 +39,8 @@ module.exports = {
   ],
   '/后端/koa/': [
     {
-      title: '1',
-      path: '/后端/koa/1.md'
+      title: '项目搭建',
+      path: '/后端/koa/create-koa.md'
     }
   ],
   '/front/react/': [
@@ -88,5 +88,14 @@ module.exports = {
       title: '1',
       path: '/运维/jenkins/1.md'
     }
+  ],
+  '/course-knowledge/': [
+    {
+      title: 'react+TS仿jira',
+      children: [
+        '/course-knowledge/jira/1'
+      ]
+    }
   ]
+
 }

@@ -9,8 +9,8 @@ module.exports = {
     sidebar,
     lastUpdated: '最后更新时间',
     lastUpdated: true,
-    repo: 'https://github.com/dogdogbrother/note-book',
-    repoLabel: 'Github',
+    // repo: 'https://github.com/dogdogbrother/note-book',
+    // repoLabel: 'Github',
   },
   markdown: {
     lineNumbers: true

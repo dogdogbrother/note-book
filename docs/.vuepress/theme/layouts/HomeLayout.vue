@@ -83,7 +83,7 @@ ul
     width 28%
     height 100%
     position relative  
-    padding 60px 15px 20px 15px
+    padding 45px 15px 20px 15px
     box-sizing: border-box
     .position-trigon
       background-color #fff

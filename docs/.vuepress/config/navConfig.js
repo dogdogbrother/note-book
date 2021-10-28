@@ -1,5 +1,6 @@
 module.exports = [
   { text: '笔记本', link: '/notebook/笔记本描述.md' },
+  { text: '课程知识汇总', link: '/course-knowledge/前言.md' },
   { 
     text: '前端', 
     items: [
@@ -21,7 +22,7 @@ module.exports = [
     text: '后端开发', 
     items: [
       {
-        text: 'koa', link: '/后端/koa/introduction.md'
+        text: 'koa', link: '/后端/koa/前言.md'
       }
     ]
   },
@@ -43,5 +44,5 @@ module.exports = [
         text: 'jenkins', link: '/运维/jenkins/前言.md'
       }
     ]
-  }
+  },
 ]
