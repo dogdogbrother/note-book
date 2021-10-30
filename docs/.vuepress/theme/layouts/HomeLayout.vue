@@ -146,7 +146,6 @@ ul
 
 @media screen and (max-width:1000px)
   .adorn
-    background-image url(../../public/img/home-bg.jpeg)
     width 100%
     height 80vw 
   .blog-info

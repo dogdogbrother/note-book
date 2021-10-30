@@ -40,8 +40,8 @@ import EnteringDialog from './components/EnteringDialog.vue'
 export default {
   components: { EnteringDialog },
   created() {
-    const wordData = localStorage.getItem("wordData")
-    this.wordData = wordData ? JSON.parse(wordData) : []
+    // const wordData = LocalStorage.getItem("wordData")
+    // this.wordData = wordData ? JSON.parse(wordData) : []
   },
   computed: {
     getCurrentWord() {
@@ -71,7 +71,7 @@ export default {
     },
     addUpdate(obj) {
       this.wordData.push(obj)
-      localStorage.setItem("wordData", JSON.stringify(this.wordData))
+      // localStorage.setItem("wordData", JSON.stringify(this.wordData))
     },
     // 认识此单词
     remember() {
