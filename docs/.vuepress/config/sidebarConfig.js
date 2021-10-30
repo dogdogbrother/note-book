@@ -63,8 +63,8 @@ module.exports = {
   ],
   '/front/webpack': [
     {
-      title: 'testt',
-      path: '/杂事本/背单词项目/项目时间线.md'
+      title: 'webpack第一步',
+      path: '/front/webpack/1.md'
     }
   ],
   '/front/electron': [
