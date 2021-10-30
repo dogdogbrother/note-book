@@ -39,9 +39,17 @@ module.exports = {
   ],
   '/后端/koa/': [
     {
+      title: 'mysql',
+      path: '/后端/koa/mysql.md'
+    },
+    {
       title: '项目搭建',
       path: '/后端/koa/create-koa.md'
-    }
+    },
+    {
+      title: '目录结构',
+      path: '/后端/koa/directory.md'
+    },
   ],
   '/front/react/': [
     {

@@ -6,7 +6,7 @@ npm init
 ```
 ```sh
 npm i koa --save
-npm install nodemon --save-dev
+npm i nodemon --save-dev
 npm i koa-router --save
 npm i koa-bodyparser --save
 npm i koa-json-error --save
@@ -70,6 +70,82 @@ app.use(usersRouter.allowedMethods())
 ```
 > 需要注意的是,要`use`三次才能把三个功能都注册上.
 
+### 405和501状态码
+
+405和501状态码是`allowedMethods`封装好的,这两个的意思其实都是未实现的,但是还是有区别的.
+
+假如 `http://example.org` 接口只有 **GET** 和 **POST** 请求,当你用 **DELETE** 去请求的时候,理论上应该是 404,但是`allowedMethods`帮你很机智的返回了 **405**,意思是 **DELETE** 的功能我们还没有写,暂时实现不了你想要的功能.
+
+但是如果你用 **LINK** 方法去请求,就会返回 501.因为`koa2`只能实现一些常规的method,不支持 **LINK** 方法,无法显示.
+
+所以405和501的区别就是一个是我还没写,一个是我写不了.
+
+## koa-bodyparser 请求体
+
+用户请求接口携带的参数很容易就能获取到,例如`ctx.query`/`ctx.header`/`ctx.params`.
+
+但是,拿不到post的请求体,这是因为`koa2`就不支持接收请求体,一定要安装中间件才行.
+```js
+const bodyparser = require('koa-bodyparser')
+app.use(bodyparser())
+```
+使用 `ctx.request.body` 就能拿到数据对象了.
+> 注意,最好是在尽量前面的位置去使用`bodyparser`
+
+## koa-json-error 错误格式返回
+
+在http请求错误时,除了**404**/**500**等状态码的返回,还会附带JSON格式的相关数据,便于快速的错误定位.
+```js
+const error = require("koa-json-error")
+app.use(error())
+```
+
+### 错误堆栈 stack
+
+举个服务器代码错误导致的500的返回信息:
+```json
+{
+    "name": "ReferenceError",
+    "message": "a is not defined",
+    "stack": "ReferenceError: a is not defined\n at find(D:\\code\\zhihu\\app..)",
+    "status": 500
+}
+```
+**stack** 字段会把具体的报错信息都返回给客户端,这样虽然便于调试,但是不安全(把目录信息都暴露了),所以线上环境是一定要禁止返回 **stack** 字段的.
+
+用自带的API参数配置和**环境变量**相互配合即可实现:
+```js
+app.use(error({
+  postFormat: (e, {stack, ...rest})=> process.env.NODE_ENV === 'production' ? rest : { stack, ...rest }
+}))
+```
+利用解构语法剔除掉 `stack` 字段.
+
+## cross-env 环境变量
+
+因为mac和window的环境变量的设置方法是不一样的,所以需要个 `cross-env` 插件做兼容处理.
+```json
+{
+  "dev": "cross-env NODE_ENV=dev nodemon app",
+}
+```
+
+## koa-parameter 参数校验
+```js
+const parameter = require('koa-parameter')
+app.use(parameter(app))
+```
+:::tip 2点注意
+因为parameter是对参数体进行校验,所以在注册的时候最好放在bodyparser注册下面.  
+parameter有个参数是app,这个其实是因为提供了一些全局方法,用来需要修改程序的全局实例.
+:::
+```js
+ ctx.verifyParams({
+    name: { type: 'string', required: true },
+    age: { type: 'number', required: false }
+})
+```
+如果你传参格式有误的话,就会报**422**错误,并且会有非常详细的JSON格式的报错信息.
 
 
 

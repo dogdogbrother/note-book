@@ -67,6 +67,10 @@ ul
   margin 0
   padding 0
   list-style none
+.adorn
+  background-image url(../../public/img/home-bg.jpeg)
+  background-size cover
+  background-position center center
 
 @media screen and (min-width:1000px)
   .wrap
@@ -76,9 +80,6 @@ ul
     .adorn
       width 72%
       height 100%
-      background-image url(../../public/img/home-bg.jpeg)
-      background-size cover
-      background-position center center
   .content
     width 28%
     height 100%
@@ -94,24 +95,21 @@ ul
       z-index 10
       top -10%
       transform rotate(5deg)
-
-.blog-info
-  position relative  
-  z-index 11
-  height: 100%
-  display flex
-  flex-direction: column
-  justify-content space-between
   .blog-info
+    position relative  
+    z-index 11
     height: 100%
-  .website-info
-    h1
-      border-bottom none
-      margin 0 0 20px 0
-    p
-      font-size 14px
-      line-height: 1.5
-      color #6a8bad
+    display flex
+    flex-direction: column
+    justify-content space-between
+    .website-info
+      h1
+        border-bottom none
+        margin 0 0 20px 0
+      p
+        font-size 14px
+        line-height: 1.5
+        color #6a8bad
 
   .blog-list
     flex 1
@@ -123,7 +121,6 @@ ul
       font-weight: bold
     ul 
       padding-left 20px
-
   .user-info 
     display: flex
     height: 80px
@@ -146,6 +143,54 @@ ul
         margin: 0
         font-size: 13px
         font-weight: bold
-      
 
+@media screen and (max-width:1000px)
+  .adorn
+    background-image url(../../public/img/home-bg.jpeg)
+    width 100%
+    height 80vw 
+  .blog-info
+    padding 10px
+  .website-info
+    h1
+      font-size: 22px
+      text-align center
+      margin: 5px 0 15px 0
+    p
+      font-size 13px
+      line-height: 1.4
+      color #6a8bad
+      margin 10px 0
+  .blog-list
+    flex 1
+    padding 10px 0
+    a
+      font-size: 14px
+    > li
+      margin-bottom: 3px
+    span
+      font-size: 14px
+      font-weight: bold
+    ul 
+      padding-left 20px
+  .user-info 
+    padding-top 10px
+    display: flex
+    height: 60px
+    .user-avatar
+      background-image url(../../public/img/avatar.png)
+      background-size: cover
+      width 60px
+      height: 60px
+      border-radius: 50%
+    .info 
+      padding 2px 0
+      margin-left: 10px
+      display: flex
+      flex-direction: column
+      justify-content space-around
+      p
+        margin: 0
+        font-size: 12px
+        font-weight: bold
 </style>
