@@ -101,7 +101,8 @@ module.exports = {
     {
       title: 'react+TS仿jira',
       children: [
-        '/course-knowledge/jira/1'
+        '/course-knowledge/jira/环境搭建',
+        '/course-knowledge/jira/debounce函数',
       ]
     }
   ]
