@@ -29,6 +29,10 @@ module.exports = {
       path: '/notebook/git.md'
     },
     {
+      title: '前端工具',
+      path: '/notebook/tool.md'
+    },
+    {
       title: 'linux',
       path: '/notebook/linux.md'
     },
@@ -63,7 +67,7 @@ module.exports = {
   ],
   '/front/webpack': [
     {
-      title: 'webpack第一步',
+      title: 'webpack基本使用',
       path: '/front/webpack/1.md'
     }
   ],
