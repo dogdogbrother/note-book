@@ -1,5 +1,3 @@
-暂时内容如下:
-* `webpack4`版本相关内容.
-* 手写个简单的`webpack`.
+看的相关的教程是`webpack4`的,和当前`webpack5`有一点不同,内容中都是以`webpack5`为准.
 
-
+[webpack官网](https://webpack.docschina.org/)

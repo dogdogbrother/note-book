@@ -68,7 +68,11 @@ module.exports = {
   '/front/webpack': [
     {
       title: 'webpack基本使用',
-      path: '/front/webpack/1.md'
+      path: '/front/webpack/webpack-basic.md'
+    },
+    {
+      title: '样式处理',
+      path: '/front/webpack/webpack-style.md'
     }
   ],
   '/front/electron': [
