@@ -40,6 +40,10 @@ module.exports = {
       title: 'Element-ui',
       path: '/notebook/element.md'
     },
+    {
+      title: '电脑软件',
+      path: '/notebook/software.md'
+    },
   ],
   '/后端/koa/': [
     {
@@ -73,7 +77,11 @@ module.exports = {
     {
       title: '样式处理',
       path: '/front/webpack/webpack-style.md'
-    }
+    },
+    {
+      title: 'js处理',
+      path: '/front/webpack/webpack-js.md'
+    },
   ],
   '/front/electron': [
     {
