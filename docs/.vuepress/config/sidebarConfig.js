@@ -82,6 +82,14 @@ module.exports = {
       title: 'js处理',
       path: '/front/webpack/webpack-js.md'
     },
+    {
+      title: '图片文件处理',
+      path: '/front/webpack/webpack-file.md'
+    },
+    {
+      title: '多页面/sourceMap/watch',
+      path: '/front/webpack/webpack-page-sourceMap-watch.md'
+    }
   ],
   '/front/electron': [
     {
