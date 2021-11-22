@@ -89,7 +89,23 @@ module.exports = {
     {
       title: '多页面/sourceMap/watch',
       path: '/front/webpack/webpack-page-sourceMap-watch.md'
-    }
+    },
+    {
+      title: '跨域',
+      path: '/front/webpack/webpack-proxy.md'
+    },
+    {
+      title: 'resolve解析和环境变量',
+      path: '/front/webpack/webpack-resolve-env.md'
+    },
+    {
+      title: '优化-noParse-IgnorePlugion',
+      path: '/front/webpack/webpack-noParse-IgnorePlugion.md'
+    },
+    {
+      title: '优化-dllPugin',
+      path: '/front/webpack/webpack-dllPugin.md'
+    },
   ],
   '/front/electron': [
     {

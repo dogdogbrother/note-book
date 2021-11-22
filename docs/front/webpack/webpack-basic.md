@@ -31,7 +31,7 @@ module.exports = {
 ```
 `mode`一般有2中模式,`production`(压缩代码)和`development`(具有调试能力).
 
-如果不想用默认的文件名,也可以文件改名为`webpack.my.js`,执行命令`webpack.my.js --config webpack.my.js`.
+如果不想用默认的文件名,也可以文件改名为`webpack.my.js`,执行命令`webpack --config webpack.my.js`.
 
 当然可以也可以写`package.json`脚本命令:
 ```json
