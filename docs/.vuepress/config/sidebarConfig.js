@@ -47,10 +47,6 @@ module.exports = {
   ],
   '/后端/koa/': [
     {
-      title: 'mysql',
-      path: '/后端/koa/mysql.md'
-    },
-    {
       title: '项目搭建',
       path: '/后端/koa/create-koa.md'
     },
@@ -58,6 +54,21 @@ module.exports = {
       title: '目录结构',
       path: '/后端/koa/directory.md'
     },
+  ],
+  '/后端/mysql/': [
+    {
+      title: '安装/基础操作/数据类型',
+      path: '/后端/mysql/install-base-data.md'
+    },
+    {
+      title: '库和表的基本操作',
+      path: '/后端/mysql/datebase-table.md'
+    },
+    {
+      title: '列的属性',
+      path: '/后端/mysql/column.md'
+    },
+    
   ],
   '/front/react/': [
     {

@@ -23,6 +23,9 @@ module.exports = [
     items: [
       {
         text: 'koa', link: '/后端/koa/前言.md'
+      },
+      {
+        text: 'MySQL', link: '/后端/mysql/前言.md'
       }
     ]
   },
