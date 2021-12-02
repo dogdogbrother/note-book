@@ -68,7 +68,26 @@ module.exports = {
       title: '列的属性',
       path: '/后端/mysql/column.md'
     },
-    
+    {
+      title: '简单查询',
+      path: '/后端/mysql/query.md'
+    },
+    {
+      title: '带搜索条件的查询',
+      path: '/后端/mysql/search.md'
+    },
+    {
+      title: '表达式和函数',
+      path: '/后端/mysql/function.md'
+    },
+    {
+      title: '分组查询',
+      path: '/后端/mysql/group.md'
+    },
+    {
+      title: '子查询',
+      path: '/后端/mysql/sub-query.md'
+    }
   ],
   '/front/react/': [
     {
