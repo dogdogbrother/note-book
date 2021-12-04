@@ -87,7 +87,15 @@ module.exports = {
     {
       title: '子查询',
       path: '/后端/mysql/sub-query.md'
-    }
+    },
+    {
+      title: '连接查询',
+      path: '/后端/mysql/connect.md'
+    },
+    {
+      title: '数据的插入/删除/更新',
+      path: '/后端/mysql/data.md'
+    },
   ],
   '/front/react/': [
     {
