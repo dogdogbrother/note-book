@@ -12,6 +12,7 @@ npm i koa-bodyparser --save
 npm i koa-json-error --save
 npm i cross-env --save-dev
 npm i koa-parameter --save
+npm i sequelize
 ```
 
 ## koa
@@ -147,6 +148,9 @@ parameter有个参数是app,这个其实是因为提供了一些全局方法,用
 ```
 如果你传参格式有误的话,就会报**422**错误,并且会有非常详细的JSON格式的报错信息.
 
+## sequelize
+
+操作`mysql`用的工具,如果数据库是`mongoDB`,那么安装`mongoose`就好了.
 
 
 

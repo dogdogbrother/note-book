@@ -16,6 +16,37 @@ PATH=$PATH:/usr/local/mysql/bin
 source ~/.bash_profile
 ```
 
+## ContOS 环境配置
+
+[菜鸟教程的安装步骤](https://www.runoob.com/mysql/mysql-install.html)挺好的.
+
+1. 先看下,是否自带安装MySQL:
+```
+rpm -qa | grep mysql
+```
+2. 有的话先卸载:
+```
+rpm -e mysql　　// 普通删除模式
+rpm -e --nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除
+```
+3. 安装MySQL:
+```
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+rpm -ivh mysql-community-release-el7-5.noarch.rpm
+yum update  // 非强制更新
+yum install mysql-server
+```
+4. 启动MySQL:
+```
+systemctl start mysqld
+systemctl status mysqld  // 查看MySQL的运行状态
+```
+5. 查看版本和设置密码
+```
+mysqladmin --version
+mysqladmin -u root password "new_password";
+```
+
 ## 登录客户端
 
 尝试登录下(密码为安装时设置的密码):

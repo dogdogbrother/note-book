@@ -16,6 +16,9 @@ module.exports = [
       {
         text: 'next', link: '/front/next/next前言.md'
       },
+      {
+        text: 'ECharts', link: '/front/echarts/ECharts.md'
+      },
     ]
    },
   { 

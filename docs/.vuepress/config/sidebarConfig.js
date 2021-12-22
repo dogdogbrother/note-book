@@ -157,6 +157,16 @@ module.exports = {
       path: '/front/next/1111.md'
     }
   ],
+  '/front/echarts/': [
+    {
+      title: '折线图',
+      path: '/front/echarts/chart-line.md'
+    },
+    {
+      title: '柱状图',
+      path: '/front/echarts/chart-bar.md'
+    },
+  ],
   '/后端/建站大副本/': [
     {
       title: '1',
@@ -184,5 +194,4 @@ module.exports = {
       ]
     }
   ]
-
 }
