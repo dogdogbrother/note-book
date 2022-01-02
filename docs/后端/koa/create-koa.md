@@ -127,7 +127,7 @@ app.use(error({
 因为mac和window的环境变量的设置方法是不一样的,所以需要个 `cross-env` 插件做兼容处理.
 ```json
 {
-  "dev": "cross-env NODE_ENV=dev nodemon app",
+  "dev": "cross-env NODE_ENV=dev nodemon app.js",
 }
 ```
 

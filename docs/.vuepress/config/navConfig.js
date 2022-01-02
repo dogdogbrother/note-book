@@ -5,7 +5,10 @@ module.exports = [
     text: '前端', 
     items: [
       {
-        text: 'react', link: '/front/react/react前言.md'
+        text: 'react', link: '/front/react/react.md'
+      },
+      {
+        text: 'vue', link: '/front/vue/vue.md'
       },
       {
         text: 'webpack', link: '/front/webpack/webpack前言.md'
@@ -18,6 +21,9 @@ module.exports = [
       },
       {
         text: 'ECharts', link: '/front/echarts/ECharts.md'
+      },
+      {
+        text: 'typescript', link: '/front/typescript/typescript.md'
       },
     ]
    },

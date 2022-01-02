@@ -44,6 +44,10 @@ module.exports = {
       title: '电脑软件',
       path: '/notebook/software.md'
     },
+    {
+      title: '网站',
+      path: '/notebook/website.md'
+    },
   ],
   '/后端/koa/': [
     {
@@ -107,6 +111,12 @@ module.exports = {
       path: '/front/react/react晋级.md'
     }
   ],
+  '/front/vue/': [
+    {
+      title: 'vue3基础API',
+      path: '/front/vue/vue-basic.md'
+    },
+  ],
   '/front/webpack': [
     {
       title: 'webpack基本使用',
@@ -165,6 +175,12 @@ module.exports = {
     {
       title: '柱状图',
       path: '/front/echarts/chart-bar.md'
+    },
+  ],
+  '/front/typescript/': [
+    {
+      title: '1',
+      path: '/front/typescript/1.md'
     },
   ],
   '/后端/建站大副本/': [
