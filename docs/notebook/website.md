@@ -29,3 +29,5 @@ burst是爆炸,shopify是某个电商服务商,这个网站是通过[shopify](ht
 ## 后端相关
 
 * API文档 [Yapi](https://hellosean1025.github.io/yapi/index.html)
+
+* [sequelize的V6版本文档](https://www.sequelize.com.cn/other-topics/upgrade-to-v6)
