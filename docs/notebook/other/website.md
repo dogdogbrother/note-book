@@ -10,6 +10,8 @@
 
 * [leetcode](https://leetcode-cn.com/)
 
+* [前端刷题网站](https://fe.ecool.fun/)
+
 ## 素材网站
 
 * 图片素材 [burst.shopify](https://burst.shopify.com/)  
@@ -25,6 +27,9 @@ burst是爆炸,shopify是某个电商服务商,这个网站是通过[shopify](ht
 * [vue3官网](https://v3.cn.vuejs.org/)
 
 * [Ant Design of Vue](https://antdv.com/docs/vue/introduce-cn/)
+
+* [vue3的状态管理工具pinia](https://pinia.vuejs.org/)
+
 
 ## 后端相关
 

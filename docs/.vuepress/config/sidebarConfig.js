@@ -1,54 +1,112 @@
 module.exports = {
-  '/notebook/': [
+  '/notebook/css/': [
     {
-      title: 'css',
-      path: '/notebook/css.md'
+      title: 'css常用属性',
+      path: '/notebook/css/often-css.md'
     },
     {
-      title: 'Array 数组',
-      path: '/notebook/array.md'
+      title: 'flex布局',
+      path: '/notebook/css/flex.md'
     },
     {
-      title: 'Object 对象',
-      path: '/notebook/object.md'
+      title: 'css选择器',
+      path: '/notebook/css/selector.md'
+    },
+  ],
+  '/notebook/js/': [
+    {
+      title: 'Array',
+      path: '/notebook/js/array.md'
     },
     {
-      title: 'String 字符串',
-      path: '/notebook/string.md'
+      title: 'Object',
+      path: '/notebook/js/object.md'
     },
     {
-      title: 'Number 数字',
-      path: '/notebook/number.md'
+      title: 'String',
+      path: '/notebook/js/string.md'
+    },
+    {
+      title: 'Number',
+      path: '/notebook/js/number.md'
     },
     {
       title: '运算符',
-      path: '/notebook/operator.md'
+      path: '/notebook/js/operator.md'
     },
+  ],
+  '/notebook/other/': [
     {
       title: 'git',
-      path: '/notebook/git.md'
+      path: '/notebook/other/git.md'
     },
     {
       title: '前端工具',
-      path: '/notebook/tool.md'
+      path: '/notebook/other/front-tool.md'
     },
     {
       title: 'linux',
-      path: '/notebook/linux.md'
-    },
-    {
-      title: 'Element-ui',
-      path: '/notebook/element.md'
+      path: '/notebook/other/linux.md'
     },
     {
       title: '电脑软件',
-      path: '/notebook/software.md'
+      path: '/notebook/other/software.md'
     },
     {
       title: '网站',
-      path: '/notebook/website.md'
+      path: '/notebook/other/website.md'
     },
   ],
+  // '/notebook/': [
+  //   {
+  //     title: 'css',
+  //     path: '/notebook/css.md'
+  //   },
+  //   {
+  //     title: 'Array 数组',
+  //     path: '/notebook/array.md'
+  //   },
+  //   {
+  //     title: 'Object 对象',
+  //     path: '/notebook/object.md'
+  //   },
+  //   {
+  //     title: 'String 字符串',
+  //     path: '/notebook/string.md'
+  //   },
+  //   {
+  //     title: 'Number 数字',
+  //     path: '/notebook/number.md'
+  //   },
+  //   {
+  //     title: '运算符',
+  //     path: '/notebook/operator.md'
+  //   },
+  //   {
+  //     title: 'git',
+  //     path: '/notebook/git.md'
+  //   },
+  //   {
+  //     title: '前端工具',
+  //     path: '/notebook/tool.md'
+  //   },
+  //   {
+  //     title: 'linux',
+  //     path: '/notebook/linux.md'
+  //   },
+  //   {
+  //     title: 'Element-ui',
+  //     path: '/notebook/element.md'
+  //   },
+  //   {
+  //     title: '电脑软件',
+  //     path: '/notebook/software.md'
+  //   },
+  //   {
+  //     title: '网站',
+  //     path: '/notebook/website.md'
+  //   },
+  // ],
   '/后端/koa/': [
     {
       title: '项目搭建',

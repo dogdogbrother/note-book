@@ -1,5 +1,18 @@
 module.exports = [
-  { text: '笔记本', link: '/notebook/笔记本描述.md' },
+  { 
+    text: '笔记本',
+    items: [
+      {
+        text: 'css', link: '/notebook/css/css.md'
+      },
+      {
+        text: 'js', link: '/notebook/js/js.md'
+      },
+      {
+        text: '杂项', link: '/notebook/other/other.md'
+      }
+    ]
+  },
   { text: '课程知识汇总', link: '/course-knowledge/前言.md' },
   { 
     text: '前端', 
