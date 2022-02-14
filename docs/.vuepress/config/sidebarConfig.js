@@ -167,6 +167,10 @@ module.exports = {
     {
       title: 'react晋级hook',
       path: '/front/react/react晋级.md'
+    },
+    {
+      title: 'redux',
+      path: '/front/react/redux.md'
     }
   ],
   '/front/vue/': [
