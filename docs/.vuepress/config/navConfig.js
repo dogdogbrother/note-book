@@ -9,6 +9,9 @@ module.exports = [
         text: 'js', link: '/notebook/js/js.md'
       },
       {
+        text: 'html', link: '/notebook/html/html.md'
+      },
+      {
         text: '杂项', link: '/notebook/other/other.md'
       }
     ]

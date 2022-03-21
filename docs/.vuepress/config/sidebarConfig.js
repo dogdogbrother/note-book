@@ -35,6 +35,12 @@ module.exports = {
       path: '/notebook/js/operator.md'
     },
   ],
+  '/notebook/html/': [
+    {
+      title: '标签元素',
+      path: '/notebook/html/label.md'
+    },
+  ],
   '/notebook/other/': [
     {
       title: 'git',
@@ -57,56 +63,6 @@ module.exports = {
       path: '/notebook/other/website.md'
     },
   ],
-  // '/notebook/': [
-  //   {
-  //     title: 'css',
-  //     path: '/notebook/css.md'
-  //   },
-  //   {
-  //     title: 'Array 数组',
-  //     path: '/notebook/array.md'
-  //   },
-  //   {
-  //     title: 'Object 对象',
-  //     path: '/notebook/object.md'
-  //   },
-  //   {
-  //     title: 'String 字符串',
-  //     path: '/notebook/string.md'
-  //   },
-  //   {
-  //     title: 'Number 数字',
-  //     path: '/notebook/number.md'
-  //   },
-  //   {
-  //     title: '运算符',
-  //     path: '/notebook/operator.md'
-  //   },
-  //   {
-  //     title: 'git',
-  //     path: '/notebook/git.md'
-  //   },
-  //   {
-  //     title: '前端工具',
-  //     path: '/notebook/tool.md'
-  //   },
-  //   {
-  //     title: 'linux',
-  //     path: '/notebook/linux.md'
-  //   },
-  //   {
-  //     title: 'Element-ui',
-  //     path: '/notebook/element.md'
-  //   },
-  //   {
-  //     title: '电脑软件',
-  //     path: '/notebook/software.md'
-  //   },
-  //   {
-  //     title: '网站',
-  //     path: '/notebook/website.md'
-  //   },
-  // ],
   '/后端/koa/': [
     {
       title: '项目搭建',
@@ -171,7 +127,11 @@ module.exports = {
     {
       title: 'redux',
       path: '/front/react/redux.md'
-    }
+    },
+    {
+      title: '脚手架和代码规范',
+      path: '/front/react/cli-prettier-commitlint.md'
+    },
   ],
   '/front/vue/': [
     {
