@@ -227,8 +227,22 @@ module.exports = {
     {
       title: "react+TS仿jira",
       children: [
-        "/course-knowledge/jira/环境搭建",
-        "/course-knowledge/jira/debounce函数",
+        {
+          title: "环境搭建",
+          path: "/course-knowledge/jira/code-setup.md",
+        },
+        {
+          title: "debounce函数",
+          path: "/course-knowledge/jira/debounceFn.md",
+        },
+        {
+          title: "ts项目demo和ts基础知识",
+          path: "/course-knowledge/jira/ts-demo.md",
+        },
+        {
+          title: "原生的login页面",
+          path: "/course-knowledge/jira/login.md",
+        },
       ],
     },
   ],

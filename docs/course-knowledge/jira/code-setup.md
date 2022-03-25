@@ -38,7 +38,7 @@ npm i json-server -D
 执行此命令时,会在本地开启3001端口的服务器,在postman中可以用`REST API`风格对数据进行增删改查.
 
 ### json-server 的中间件
-因为日常开发中难免会用到不符合 `REST API` 风格的接口,例如登录功能,所以需要中间件来兼容.
+因为日常开发中难免会用到不符合 `REST API` 风格的接口,例如登录功能,所以需要中间件来兼容,`__json_server_mock__`目录下新建`middleware.js`文件:
 ```js
 module.exports = (req, res, next) => {
   if (req.method === "POST" && req.path === "/login") {
@@ -53,6 +53,16 @@ module.exports = (req, res, next) => {
     }
   }
   next();
+}
+```
+使用此配置文件的方案是在脚本后面加上参数和文件路径即可:
+```json
+{
+  // ...
+  "scripts": {
+    // ...
+    "json-server": "json-server __json_server_mock__/db.json --watch --port 3001 --middlewares ./__json_server_mock__/middleware.js"
+  }
 }
 ```
 
