@@ -243,6 +243,14 @@ module.exports = {
           title: "原生的login页面",
           path: "/course-knowledge/jira/login.md",
         },
+        {
+          title: "初步的鉴权逻辑",
+          path: "/course-knowledge/jira/auth-1.md",
+        },
+        {
+          title: "完善鉴权,封装http",
+          path: "/course-knowledge/jira/auth-2.md",
+        },
       ],
     },
   ],

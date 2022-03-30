@@ -36,3 +36,9 @@ burst是爆炸,shopify是某个电商服务商,这个网站是通过[shopify](ht
 * API文档 [Yapi](https://hellosean1025.github.io/yapi/index.html)
 
 * [sequelize的V6版本文档](https://www.sequelize.com.cn/other-topics/upgrade-to-v6)
+
+## 官网们
+
+* [typescript中文文档](https://www.tslang.cn/docs/release-notes/typescript-3.1.html) 比较拉胯是,目前(2022年3月)只支持**3.x**版本.
+
+* [typescript英文文档](https://www.typescriptlang.org/docs/) 虽然是最新的`typescript4`,但是是英文的...

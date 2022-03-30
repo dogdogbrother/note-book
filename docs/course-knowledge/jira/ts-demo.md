@@ -79,3 +79,92 @@ const returnFn = <V>(value: V) => {
   return value
 }
 ```
+
+## TS的 Utility Type 操作符
+
+### Partial
+`partial`意思是`部分的,不完全的`.
+
+假如有个`interface`:
+```tsx
+interface Person {
+  name: string
+  age: string
+}
+```
+我们想让这两个参数变为可选参数,只需要加上`?`即可,`name?: string`.
+
+但是有2个痛点:
+1. 假如`interface`内容比较多,全部都加上`?`既麻烦又不美观.
+2. 假如只有我这一个使用场景特殊,需要变成可选,改变原有的`interface`从而影响其他地方的代码,是非常不合理的.
+
+故此,`partial`的应用场景就出现了:
+```ts
+const me: Partial<Person> = {}  // 没问题
+```
+
+### Omit
+
+`Omit`的意思是**省去,遗漏**.
+
+和`partial`的变为可选不同,`Omit`是直接删除掉某个参数:
+```ts
+const me: Omit<Person, 'name'> = { age: 8 }  // 传name或者空对象都会报错
+```
+
+::: tip 提示
+`Utility Type` 操作符有很多,`Partial`和`Omit`是最常用的2个.
+:::
+
+### typeof
+
+ts的`typeof`和js的`typeof`不一样,js的`typeof`都是**rentime运行时**的,而ts的`typeof`是在静态环境运行的,也就是说,编译成js后是不会有`typeof`内容的.
+
+ts的`typeof`有什么用呢,我的理解是对其他类型进行解析,把js变成ts类型的意思,举2个例子:
+```ts
+const me = { name: 'senlin', age: 18 }
+type Person = typeof me
+```
+<img src="./img/typeof-1.png" />
+
+`Person`的类型通过`typeof`正确推断出来了.
+
+```ts
+function me(name: string, age: number) {}
+
+type Person = typeof me
+
+// Person类型被推断出为:
+type Person = (name: string, age: number) => void
+```
+
+::: tip typeof和其他操作符的配合
+  除了用`typeof`去推断类型,还可以配合`Parameters`获取`typeof 函数`的参数类型,`ReturnType`获取函数的返回值类型.
+:::
+
+### Parameters 和 ReturnType
+
+假如有个函数:
+```ts
+function me(name: string, age: number) {
+  return { name, age, gender: '男'  }
+}
+```
+
+`Parameters`的作用是把函数的参数类型用元祖`tuple`类型提取出来:
+```ts
+type Person = Parameters<typeof me>
+// 鼠标移到Person上,显示类型为
+type Person = [name: string, age: number]
+```
+
+`ReturnType`顾名思义,获取返回的类型:
+```ts
+type Person = ReturnType<typeof me>
+// 等于
+type Person = {
+  name: string;
+  age: number;
+  gender: string;
+}
+```
