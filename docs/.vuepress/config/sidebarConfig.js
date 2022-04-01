@@ -251,7 +251,15 @@ module.exports = {
           title: "完善鉴权,封装http",
           path: "/course-knowledge/jira/auth-2.md",
         },
+        {
+          title: "antd和emotion",
+          path: "/course-knowledge/jira/antd-emotion.md",
+        },
+        {
+          title: "样式优化和去除警告",
+          path: "/course-knowledge/jira/style-clean.md",
+        },
       ],
     },
   ],
-};
+}

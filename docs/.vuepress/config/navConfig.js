@@ -58,7 +58,7 @@ module.exports = [
     text: '杂事本', 
     items: [
       {
-        text: '单词本', link: '/杂事本/单词本.md'
+        text: '工作复制文档', link: '/杂事本/copyDoc.md'
       }
     ]
   },
