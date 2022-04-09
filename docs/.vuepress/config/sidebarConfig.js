@@ -259,6 +259,18 @@ module.exports = {
           title: "样式优化和去除警告",
           path: "/course-knowledge/jira/style-clean.md",
         },
+        {
+          title: "捕捉边界错误",
+          path: "/course-knowledge/jira/error-boundary.md",
+        },
+        {
+          title: "路由",
+          path: "/course-knowledge/jira/react-router.md",
+        },
+        {
+          title: "用useUrlQueryParam管理url参数",
+          path: "/course-knowledge/jira/query-param.md",
+        },
       ],
     },
   ],

@@ -59,6 +59,19 @@ for (let [key, value] of Object.entries(object1)) {
 }
 ```
 
+## Object.fromEntries()
+
+**和entries方法相反,`fromEntries`是把 [key, value] 数组转成。**
+
+```js
+const entries = [
+  ['foo', 'bar'],
+  ['baz', 42]
+]
+
+const obj = Object.fromEntries(entries);
+// { foo: "bar", baz: 42 }
+```
 ## Object.freeze()
 
 **冻结对象：其他代码不能删除或更改任何属性。**
