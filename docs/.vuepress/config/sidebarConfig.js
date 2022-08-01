@@ -273,5 +273,14 @@ module.exports = {
         },
       ],
     },
+    {
+      title: "手写自己的cli",
+      children: [
+        {
+          title: "cli",
+          path: "/course-knowledge/vue-cli/cli.md",
+        },
+      ]
+    }
   ],
 }
