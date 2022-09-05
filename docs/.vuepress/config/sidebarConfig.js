@@ -275,12 +275,11 @@ module.exports = {
     },
     {
       title: "手写自己的cli",
-      children: [
-        {
-          title: "cli",
-          path: "/course-knowledge/vue-cli/cli.md",
-        },
-      ]
-    }
+      path: "/course-knowledge/vue-cli/cli.md"
+    },
+    {
+      title: "玩转css艺术之美",
+      path: "/course-knowledge/beauty-css/1.md"
+    },
   ],
 }
