@@ -91,20 +91,3 @@ li {
 }
 ```
 子级的元素可以使用父级定义的自定义变量.
-
-## 案例1 心形加载条
-
-效果如下:
-
-<template>
-  <Heartbeat />
-</template>
-
-<script>
-import Heartbeat from './component/heartbeat'
-export default {
-  components: {
-    Heartbeat
-  }
-}
-</script>

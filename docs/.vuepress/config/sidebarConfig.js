@@ -279,7 +279,29 @@ module.exports = {
     },
     {
       title: "玩转css艺术之美",
-      path: "/course-knowledge/beauty-css/1.md"
+      children: [
+        {
+          title: "回流重绘和计算",
+          path: "/course-knowledge/beauty-css/paint.md",
+        },
+        {
+          title: "案例1-加载条",
+          path: "/course-knowledge/beauty-css/loading.md",
+        },
+        {
+          title: "案例2-鼠标跟踪的按钮",
+          path: "/course-knowledge/beauty-css/btn.md",
+        },
+        {
+          title: "选择器",
+          path: "/course-knowledge/beauty-css/selector.md",
+        },
+        {
+          title: "背景与遮罩",
+          path: "/course-knowledge/beauty-css/background.md",
+        },
+      ]
+      // path: "/course-knowledge/beauty-css/css1.md"
     },
   ],
 }
